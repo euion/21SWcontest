@@ -1,0 +1,23 @@
+.main-container{
+    width: 40%;
+    margin: 2vmin;
+    padding-top: 10%;
+}
+.about_container{
+    padding: 5vmin;
+}
+.attendBtn{
+    text-decoration: none;
+    color: rgb(243, 241, 241);
+    font-weight: bolder;
+    text-align: center;
+    width: 100px;
+    background-color:yellowgreen;
+    border-radius: 20px;
+    padding :10px 20px 10px 20px;
+}
+.attendBtn:hover{
+    background-color:rgb(125, 167, 43);
+    font-weight: bolder;
+    color: rgb(243, 241, 241);
+}

@@ -1,0 +1,73 @@
+.nav-container{
+    padding-top: 2vh;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-h1{
+    color: gray;
+    font-weight: 500;
+}
+.nav--Element a{
+    text-decoration: none;
+    color: gray;
+}
+.nav--Element a:hover{
+    color: rgb(82, 173, 122);
+    font-weight: bolder;
+}
+.main-src{
+    width: 50vmax;
+    border-radius: 20px;
+    padding: 10px;
+}
+.login-btn {
+    background-color:yellowgreen;
+    color: honeydew;
+    text-decoration: none;
+}
+#login-txt{
+    color: honeydew;
+    text-decoration: none;
+}
+.main_titl_1{
+    color : yellowgreen;
+    display: inline-block;
+
+  }
+  .main_titl_2{
+    color : #142a8d;
+    display: inline-block;
+  }
+#button-addon2{
+    border-radius: 20px;
+    background-color: yellowgreen;
+    border:0px;
+    color: honeydew;
+    width: 100px;
+}
+#button-addon2:hover{
+    border-radius: 20px;
+    background-color: rgb(120, 160, 40);
+    border:0px;
+    color: honeydew;
+    width: 100px;
+}
+.main-content-container{
+    display: flex;
+    padding-left: 15vmin;
+    padding-top: 50vh;
+}
+.main-content-container h1 {
+    color : #142a8d;
+}
+.mb-3 {
+    margin-bottom: 0rem!important;
+}
+.mb-3 .main-form-control{
+    border: 0px;
+    border-radius: 20px 20px 20px 20px;
+}
+.main-form-contaner{
+    border: solid 0.5px rgba(128, 128, 128, 0.445);
+    border-radius: 20px;
+}
