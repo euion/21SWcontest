@@ -1,9 +1,14 @@
 import React from 'react';
+import Header,{ MainContent}   from './TopNav';
 
-function Attend() {
-    return (
-        <div>ddddd</div>
-    );
+class MyPage extends React.Component{
+    render(){ 
+        return  (
+            <div>
+                <h1>당신의 활동내역입니다.</h1>
+            </div>
+        );
+    }
 }
 
-export default Attend;
+export default MyPage;

@@ -1,9 +1,24 @@
+.all-form-div{
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/Frame6.png);
+  background-size: cover;
+}
+
+.Header-content{
+    margin-bottom: 0;
+    padding-bottom: 0%;
+}
+
 .login-form-div{
     display: flex;
     justify-content: center;
 }
-
 .login-form-container{
+
     width: 50vh;
     padding-top: 10vh;
 }

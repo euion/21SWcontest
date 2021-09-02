@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import { Nav, Button, InputGroup, FormControl } from 'react-bootstrap';
-import App from './App'
+import App from '../App'
 import '../css/Nav.css'
 
 // function Nav2(){
@@ -28,7 +28,7 @@ function TopNav(){
     return(
             <Nav defaultActiveKey="/home" as="ul" className="nav-container">
                 <Nav.Item as="li" >
-                    <Nav.Link href="/home"><h1 className="nav-h1"><div class="main_titl_1">환경</div><div class="main_titl_2">마라톤</div></h1></Nav.Link>
+                    <Nav.Link href="/home"><h1 className="nav-h1"><div class="main_titl_1">Eco</div>Toner</h1></Nav.Link>
                 </Nav.Item>
                 <Nav.Item as="li">
                     <li class="nav--Element"><Link to="/AboutUs">About Us</Link></li>
