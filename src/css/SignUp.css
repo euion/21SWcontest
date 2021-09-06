@@ -1,0 +1,16 @@
+.signup-input-box{
+    border-radius: 20px;
+    border: solid 0.5px gray;
+}
+
+.signup-input-box:hover{
+    border-radius: 20px;
+    border: solid 0.5px gray;
+}
+
+Link{
+    text-decoration: none;
+}
+.login-form-div{
+    padding-bottom: 5rem;
+}

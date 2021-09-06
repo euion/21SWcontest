@@ -24,6 +24,7 @@
     background-color:yellowgreen;
     color: honeydew;
     text-decoration: none;
+    border: none;
 }
 #login-txt{
     color: honeydew;
@@ -70,4 +71,31 @@
 .main-form-contaner{
     border: solid 0.5px rgba(128, 128, 128, 0.445);
     border-radius: 20px;
+}
+.signUp-btn{
+    background-color:rgb(209, 147, 53);
+    color: honeydew;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 5px 25px ;
+    border: none;
+    margin-left: 1rem;
+}
+.signUp-btn:hover{
+    background-color:rgb(156, 111, 44);
+    color: honeydew;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 5px 25px ;
+    border: none;
+    margin-left: 1rem;
+}
+#signUp-txt{
+    color: honeydew;
+    text-decoration: none;
+}
+#signUp-txt:hover{
+    background-color:rgb(156, 111, 44);
+    color: honeydew;
+    text-decoration: none;
 }

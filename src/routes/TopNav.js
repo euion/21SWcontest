@@ -41,6 +41,7 @@ function TopNav(){
                 </Nav.Item>
                 <Nav.Item>
                     <Button variant="success" className="login-btn"><Link to="/login" id="login-txt">Login</Link></Button>
+                    <Button variant="success" className="signUp-btn"><Link to="/SignUp" id="signUp-txt">Signup</Link></Button>
                 </Nav.Item>
             </Nav> 
     );
@@ -60,7 +61,7 @@ function MainContent(){
                         aria-describedby="basic-addon2"
                         />
                         <Button variant="outline-secondary" id="button-addon2">
-                        Button
+                        Search
                         </Button>
                     </InputGroup>                    
                 </div>
