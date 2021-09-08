@@ -7,7 +7,7 @@ import anime from "animejs/lib/anime.es.js";
 
 function TopNav() {
     return (
-      <Nav defaultActiveKey="/home" as="ul" className="nav-container">
+      <Nav defaultActiveKey="/" as="ul" className="nav-container">
         <Nav.Item as="li">
           <Nav.Link>
             <Link to ="/" className="home-link"> 
