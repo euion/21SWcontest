@@ -4,6 +4,7 @@ import "../css/Home.css";
 import cloud from "../img/Cloud.svg";
 import cloud2 from "../img/Cloud2.svg";
 import anime from "animejs/lib/anime.es.js";
+
 class Home extends React.Component {
   componentDidMount() {
     anime({

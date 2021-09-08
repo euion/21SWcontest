@@ -9,10 +9,12 @@ function TopNav() {
     return (
       <Nav defaultActiveKey="/home" as="ul" className="nav-container">
         <Nav.Item as="li">
-          <Nav.Link href="/home">
-            <h1 className="nav-h1">
-              <div class="main_titl_1">Eco</div>Toner
-            </h1>
+          <Nav.Link>
+            <Link to ="/" className="home-link"> 
+              <h1 className="nav-h1">
+                <div className="home-link"><div class="main_titl_1">Eco</div>Toner</div>
+              </h1>            
+            </Link>
           </Nav.Link>
         </Nav.Item>
         <Nav.Item as="li">
