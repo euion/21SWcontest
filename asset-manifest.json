@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/21SWcontest/static/css/main.dab10d3c.chunk.css",
+    "main.js": "/21SWcontest/static/js/main.fe887364.chunk.js",
+    "main.js.map": "/21SWcontest/static/js/main.fe887364.chunk.js.map",
+    "runtime-main.js": "/21SWcontest/static/js/runtime-main.4dea4311.js",
+    "runtime-main.js.map": "/21SWcontest/static/js/runtime-main.4dea4311.js.map",
+    "static/css/2.818011ed.chunk.css": "/21SWcontest/static/css/2.818011ed.chunk.css",
+    "static/js/2.b2bbd759.chunk.js": "/21SWcontest/static/js/2.b2bbd759.chunk.js",
+    "static/js/2.b2bbd759.chunk.js.map": "/21SWcontest/static/js/2.b2bbd759.chunk.js.map",
+    "index.html": "/21SWcontest/index.html",
+    "static/css/2.818011ed.chunk.css.map": "/21SWcontest/static/css/2.818011ed.chunk.css.map",
+    "static/css/main.dab10d3c.chunk.css.map": "/21SWcontest/static/css/main.dab10d3c.chunk.css.map",
+    "static/js/2.b2bbd759.chunk.js.LICENSE.txt": "/21SWcontest/static/js/2.b2bbd759.chunk.js.LICENSE.txt",
+    "static/media/Cloud.8f48bb00.svg": "/21SWcontest/static/media/Cloud.8f48bb00.svg",
+    "static/media/Cloud2.af10281f.svg": "/21SWcontest/static/media/Cloud2.af10281f.svg",
+    "static/media/Home.css": "/21SWcontest/static/media/Frame2.92f8985f.png",
+    "static/media/Attend.css": "/21SWcontest/static/media/Frame6.f32e4873.png",
+    "static/media/AboutUs.css": "/21SWcontest/static/media/aboutus.966b8cb4.png",
+    "static/media/google-logo.74f50c35.png": "/21SWcontest/static/media/google-logo.74f50c35.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4dea4311.js",
+    "static/css/2.818011ed.chunk.css",
+    "static/js/2.b2bbd759.chunk.js",
+    "static/css/main.dab10d3c.chunk.css",
+    "static/js/main.fe887364.chunk.js"
+  ]
+}
