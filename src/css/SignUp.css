@@ -14,3 +14,21 @@ Link{
 .login-form-div{
     padding-bottom: 5rem;
 }
+.signUp-btn:hover{
+    background-color:rgb(156, 111, 44);
+    color: honeydew;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 5px 25px ;
+    border: none;
+    margin-left: 1rem;
+}
+#signUp-txt{
+    color: honeydew;
+    text-decoration: none;
+}
+#signUp-txt:hover{
+    background-color:rgb(156, 111, 44);
+    color: honeydew;
+    text-decoration: none;
+}

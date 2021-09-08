@@ -24,6 +24,7 @@ function Login() {
                         <Form.Group className="mb-3" controlId="formBasicCheckbox">
                             <Form.Check type="checkbox" label="Email 저장" />
                         </Form.Group>
+                        <br/>
                         <div className="login-btn-align">
                             <Button className="login-btn" variant="primary" type="submit">
                                 Login

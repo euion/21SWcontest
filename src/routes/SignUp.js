@@ -56,7 +56,7 @@ function SignUp(){
                         </Form.Group>
 
                         <Form.Group as={Col} controlId="formGridZip">
-                        <Form.Label>Zip</Form.Label>
+                        <Form.Label>전화번호</Form.Label>
                         <Form.Control />
                         </Form.Group>
                     </Row>
@@ -81,7 +81,7 @@ function SignUp(){
                     </Form.Group>
                         <div className="login-btn-align">
                             <Button className="login-btn" variant="primary" type="submit">
-                                Login
+                                <Link to="/home" id="signUp-txt">Submit</Link>
                             </Button>
                         </div>
                 </Form>
