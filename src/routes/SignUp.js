@@ -82,7 +82,7 @@ function SignUp(){
                     </Form.Group>
                         <div className="login-btn-align">
                             <Button className="login-btn" variant="primary" type="submit">
-                                <Link to={Home} id="signUp-txt">Submit</Link>
+                                <Link to='/' id="signUp-txt">Submit</Link>
                             </Button>
                         </div>
                 </Form>
