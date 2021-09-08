@@ -1,0 +1,23 @@
+.ground-img-align{
+    position: absolute;
+    bottom: 0px;
+}
+.mypage-tree-align{
+    position: absolute;
+    bottom: 10vh;
+    left: 42.5%;
+    display: flex;
+    z-index: 999;
+}
+.mypage-tree-img{
+    width: 13vmax;
+    object-fit:cover;
+}
+
+.ground-img{
+    width: 100vmax;
+    object-fit:cover;
+}
+.main-text{
+    text-align: center;
+}

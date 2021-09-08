@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import { Form, Button, Group } from 'react-bootstrap';
 import Header,{ MainContent}   from './TopNav';
+import GoogleLogo from '../img/google-logo.png';
 import '../css/Login.css';
 
 function Login() {
@@ -25,11 +26,15 @@ function Login() {
                             <Form.Check type="checkbox" label="Email 저장" />
                         </Form.Group>
                         <br/>
+                        <div className="social-login-logo-align">
+                            <Link to="#"><img src={GoogleLogo} alt="google_img" className="google-logo-btn"/></Link>
+                        </div>
+                        <br/>
                         <div className="login-btn-align">
-                            <Button className="login-btn" variant="primary" type="submit">
-                                Login
-                            </Button>
-                            <Button variant="success" className="signUp-btn"><Link to="/SignUp" id="signUp-txt">Signup</Link></Button>
+                        <Button className="login-btn" variant="primary" type="submit">
+                            Login
+                        </Button>
+                        <Button variant="success" className="signUp-btn"><Link to="/SignUp" id="signUp-txt">Signup</Link></Button>
                         </div>
                     </Form>                
                 </div>
