@@ -4,6 +4,7 @@ import { Form, Button, Group } from 'react-bootstrap';
 import Header,{ MainContent}   from './TopNav';
 import GoogleLogo from '../img/google-logo.png';
 import '../css/Login.css';
+import GoogleBtn from './GoogleButton';
 
 function Login() {
     return (
@@ -27,7 +28,7 @@ function Login() {
                         </Form.Group>
                         <br/>
                         <div className="social-login-logo-align">
-                            <Link to="#"><img src={GoogleLogo} alt="google_img" className="google-logo-btn"/></Link>
+                            <GoogleBtn />
                         </div>
                         <br/>
                         <div className="login-btn-align">

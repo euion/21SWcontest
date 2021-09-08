@@ -5,6 +5,7 @@ import Header,{ MainContent}   from './TopNav';
 import '../css/Login.css';
 
 import '../css/SignUp.css'
+import Home from './Home';
 
 
 function SignUp(){  
@@ -81,7 +82,7 @@ function SignUp(){
                     </Form.Group>
                         <div className="login-btn-align">
                             <Button className="login-btn" variant="primary" type="submit">
-                                <Link to="/home" id="signUp-txt">Submit</Link>
+                                <Link to={Home} id="signUp-txt">Submit</Link>
                             </Button>
                         </div>
                 </Form>

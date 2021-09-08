@@ -11,10 +11,14 @@ import Home from './routes/Home'
 import AboutUs from './routes/AboutUs';
 import MyPage from './routes/MyPage';
 import Login from './routes/Login';
+import GoogleButton from './routes/GoogleButton';
+import { BrowserRouter, Switch , Redirect } from "react-router-dom";
+import GoogleBtn from './routes/GoogleButton';
+
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <TopNav />  
       <Route path="/" exact = {true} component={ Home } />
       <Route path="/MyPage" exact = {true} component={MyPage}/>
@@ -24,7 +28,10 @@ function App() {
       <Route path="/Login" component={Login} />
       <Route path="/AttendSubmit" component={ AttendSubmit }/>
       <Route path="/SubmitResult" component={ SubmitResult }/>
-    </HashRouter>
+
+      {/* 구글 로그인 관련*/}
+      <Route path="/GoogleLogin" component={ GoogleBtn }/>
+    </BrowserRouter>
   );
 }
 
