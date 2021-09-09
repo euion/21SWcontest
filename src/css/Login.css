@@ -48,3 +48,18 @@
 .google-logo-btn{
     width: 20px;
 }
+/* 로그아웃 버튼 */
+.logout-btn{
+    border-radius: 20px;
+    padding: 5px 30px 5px 30px;
+    background-color:rgb(173, 99, 82);
+}
+.logout-btn:hover{
+    border-radius: 20px;
+    padding: 5px 30px 5px 30px;
+    background-color:rgb(155, 85, 87);
+}
+.logout-btn-align{
+    display: flex;
+    justify-content: center;
+}

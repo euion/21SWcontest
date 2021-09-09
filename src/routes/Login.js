@@ -1,11 +1,22 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {Link, AuthRoute} from 'react-router-dom';
 import { Form, Button, Group } from 'react-bootstrap';
 import Header,{ MainContent}   from './TopNav';
 import GoogleLogo from '../img/google-logo.png';
 import '../css/Login.css';
 import GoogleBtn from './GoogleButton';
 
+export function LoginBtn() {
+    return (
+        <div className="login-btn-align">
+        <Button className="login-btn" variant="primary" type="submit">
+            Login
+        </Button>
+        <Button variant="success" className="signUp-btn"><Link to="/SignUp" id="signUp-txt">Signup</Link></Button>
+        </div>
+    )
+
+}
 function Login() {
     return (
         <div className="all-form-div">
@@ -27,16 +38,12 @@ function Login() {
                             <Form.Check type="checkbox" label="Email 저장" />
                         </Form.Group>
                         <br/>
+
                         <div className="social-login-logo-align">
                             <GoogleBtn />
                         </div>
                         <br/>
-                        <div className="login-btn-align">
-                        <Button className="login-btn" variant="primary" type="submit">
-                            Login
-                        </Button>
-                        <Button variant="success" className="signUp-btn"><Link to="/SignUp" id="signUp-txt">Signup</Link></Button>
-                        </div>
+                        <LoginBtn />
                     </Form>                
                 </div>
         </div>

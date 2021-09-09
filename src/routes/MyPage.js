@@ -1,5 +1,5 @@
 import React from 'react';
-import Header,{ MainContent}   from './TopNav';
+import Header   from './TopNav';
 import ground from '../img/Vector.png'
 import MypageTree from '../img/Tree03-1.png'
 import '../css/MyPage.css'

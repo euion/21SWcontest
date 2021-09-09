@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, Switch } from "react-router-dom";
 import { Nav, Button, InputGroup, FormControl } from "react-bootstrap";
-import App from "../App";
+import {LogoutBtn} from './Login';
 import "../css/Nav.css";
 import anime from "animejs/lib/anime.es.js";
+import LoginStatus from "./LoginStatus";
 
 function TopNav() {
     return (
@@ -32,13 +33,8 @@ function TopNav() {
             <Link to="/MyPage">My Page</Link>
           </li>
         </Nav.Item>
-        <Nav.Item>
-          <Button variant="success" className="login-btn">
-            <Link to="/login" id="login-txt">
-              Login
-            </Link>
-          </Button>
-          <Button variant="success" className="signUp-btn"><Link to="/SignUp" id="signUp-txt">Signup</Link></Button>
+        <Nav.Item>   
+          <LoginStatus/> 
         </Nav.Item>
       </Nav>
     );

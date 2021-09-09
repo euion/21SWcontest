@@ -10,16 +10,14 @@ import SignUp from "./routes/SignUp";
 import Home from "./routes/Home";
 import AboutUs from "./routes/AboutUs";
 import MyPage from "./routes/MyPage";
-import Login from "./routes/Login";
-import GoogleButton from "./routes/GoogleButton";
-import { BrowserRouter, Switch, Redirect } from "react-router-dom";
+import Login, {LoginBtn, LogoutBtn} from "./routes/Login";
+import { BrowserRouter, Switch } from "react-router-dom";
 import GoogleBtn from "./routes/GoogleButton";
 
 function App() {
   return (
     <BrowserRouter>
-      <TopNav />
-      <Route path="/" exact={true} component={Home} />
+      <Route path="" exact={true} component={Home} />
       <Route path="/MyPage" exact={true} component={MyPage} />
       <Route path="/SignUp" component={SignUp} />
       <Route path="/Attend" component={Attend} />
