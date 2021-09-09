@@ -9,6 +9,7 @@ import dotenv from "dotenv";
 import TopNav from "./TopNav";
 import { LoginBtn } from "./Login";
 import LoginStatus from "./LoginStatus";
+import App from "../App";
 dotenv.config();
 
 const CLIENT_ID = process.env.REACT_APP_CLIENT_ID;
@@ -33,6 +34,7 @@ class GoogleBtn extends Component {
     this.login = this.login.bind(this);
     this.handleLoginFailure = this.handleLoginFailure.bind(this);
     this.logout = this.logout.bind(this);
+    this.handleSubmit =this.handleSubmit.bind(this);
     this.handleLogoutFailure = this.handleLogoutFailure.bind(this);
   }
   
@@ -53,7 +55,10 @@ class GoogleBtn extends Component {
         .catch((err) => console.log(err));
     }
   }
+  handleSubmit(e) {
+    e.preventDefault();
 
+  }
   logout(response) {
     this.setState((state) => ({
       isLogined: false,
@@ -70,17 +75,8 @@ class GoogleBtn extends Component {
   }
 
   render() {
-    if (this.props.data) {
-      var commentNodes = this.props.data.map(function (comment){
-          return (
-            <div>
-              <h1>{comment.username}</h1>
-            </div>
-          );
-      });
-    }
     return (
-      <div>
+      <div onClick={this.handleSubmit}>
         <LoginContainer>
           {this.state.isLogined ? (
             <GoogleLogout
@@ -97,12 +93,13 @@ class GoogleBtn extends Component {
               onFailure={this.handleLoginFailure}
               cookiePolicy={"single_host_origin"}
               responseType="code,token"
-              redirectUri = {Home}
               to={LoginStatus(true)}
+              redirectUri = {Home}
+              onClick={this.props.Submit}
             />
           )}
           {this.state.accessToken
-            ?<Redirect to={Home}/> // 로그인이 되면 홈으로 리다이렉트
+            ? <Redirect to={Home}/> // 로그인이 되면 홈으로 리다이렉트
             : console.log("로그아웃 상태입니다.")}
         </LoginContainer>
       </div>

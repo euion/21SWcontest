@@ -13,15 +13,24 @@ import MyPage from "./routes/MyPage";
 import Login, { LoginBtn, LogoutBtn } from "./routes/Login";
 import { BrowserRouter, Switch } from "react-router-dom";
 import GoogleBtn from "./routes/GoogleButton";
+import GoogleLogin from "react-google-login";
+import LoginStatus from "./routes/LoginStatus";
 
-function App() {
-  if (window.performance) {
+const loginstate = (data) => {
+  console.log(data);
+}
+
+function App({ }) {
+  if (window.performance) {      
+  <GoogleBtn Submit={loginstate}/>
     if (performance.navigation.type == 1) {
       alert("This page is reloaded");
+      <LoginStatus status={loginstate}/>
     } else {
       alert("This page is not reloaded");
     }
   }
+
   return (
     <BrowserRouter>
       <Route path="" exact={true} component={Home} />
