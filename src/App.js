@@ -10,11 +10,18 @@ import SignUp from "./routes/SignUp";
 import Home from "./routes/Home";
 import AboutUs from "./routes/AboutUs";
 import MyPage from "./routes/MyPage";
-import Login, {LoginBtn, LogoutBtn} from "./routes/Login";
+import Login, { LoginBtn, LogoutBtn } from "./routes/Login";
 import { BrowserRouter, Switch } from "react-router-dom";
 import GoogleBtn from "./routes/GoogleButton";
 
 function App() {
+  if (window.performance) {
+    if (performance.navigation.type == 1) {
+      alert("This page is reloaded");
+    } else {
+      alert("This page is not reloaded");
+    }
+  }
   return (
     <BrowserRouter>
       <Route path="" exact={true} component={Home} />
